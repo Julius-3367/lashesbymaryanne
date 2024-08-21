@@ -1,0 +1,224 @@
+/* Base styles */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #87CEEB;
+  /* Sky blue background */
+  font-family: Arial, sans-serif;
+}
+
+/* Header styles */
+header {
+  background-color: #FF69B4;
+  /* Hot pink */
+  color: white;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+header #logo {
+  height: 50px;
+}
+
+header nav {
+  margin: 10px 0;
+}
+
+header nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+header nav ul li {
+  margin-right: 20px;
+}
+
+header nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+header nav a:hover {
+  color: #FFC0CB;
+  /* Pink on hover */
+}
+
+/* Main content styles */
+main {
+  padding: 20px;
+  text-align: center;
+}
+
+section {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+section h2 {
+  border-bottom: 2px solid #333;
+  padding-bottom: 10px;
+}
+
+section img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Footer styles */
+footer {
+  background-color: #FF69B4;
+  /* Hot pink */
+  color: white;
+  text-align: center;
+  padding: 10px;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Button styles */
+button {
+  background-color: #FF69B4;
+  /* Hot pink */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #FF1493;
+  /* Deep pink */
+}
+
+/* WhatsApp button styles */
+.whatsapp-button {
+  background-color: #25D366;
+  /* WhatsApp green */
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  display: inline-block;
+  margin: 20px 0;
+}
+
+.whatsapp-button:hover {
+  background-color: #128C7E;
+  /* Darker WhatsApp green */
+}
+
+/* Chat box styles */
+#chat-box {
+  width: 80%;
+  margin: 0 auto;
+  border: 1px solid #FF69B4;
+  /* Hot pink */
+  border-radius: 5px;
+  padding: 10px;
+  background-color: white;
+}
+
+#messages {
+  height: 300px;
+  overflow-y: scroll;
+  border-bottom: 1px solid #FF69B4;
+  /* Hot pink */
+  margin-bottom: 10px;
+  padding: 10px;
+}
+
+#message-input,
+#chat-input {
+  width: calc(100% - 20px);
+  height: 50px;
+  margin: 10px 0;
+  padding: 10px;
+}
+
+/* Booking list styles */
+#bookings-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+#bookings-list li {
+  border: 1px solid #ddd;
+  margin: 10px 0;
+  padding: 10px;
+  position: relative;
+}
+
+#bookings-list .cancel-booking {
+  background-color: #FF6347;
+  /* Tomato */
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+
+#bookings-list .cancel-booking:hover {
+  background-color: #FF4500;
+  /* OrangeRed */
+}
+
+/* Artist list styles */
+#artist-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.artist {
+  width: 24%;
+  margin: 0.5%;
+  text-align: center;
+}
+
+.artist img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+/* Form styles */
+form {
+  width: 80%;
+  margin: 0 auto;
+}
+
+form label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+  header nav ul {
+    flex-direction: column;
+  }
+
+  header nav ul li {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  #chat-box,
+  form {
+    width: 95%;
+  }
+}
